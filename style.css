@@ -1,0 +1,265 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: white;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+.menu {
+ 
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: sans-serif;
+  padding: 15px;
+  background-color: #000000;
+  justify-content: space-between;
+
+   
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e9d9d9;
+}
+
+.hero-image {
+  background-image: url("bg.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.glow {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.grid img{
+  border: 2px solid #000000;
+  border-radius: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  margin-bottom: 0px;
+  border-color: yellow;
+  border-width: 10px;
+}
+
+
+li {
+  color: #ffffff;
+}
+
+
+.origami {
+  float: left;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 40px;
+  background-color: rgb(23, 16, 122);
+  padding: 30px;
+  margin: 70px;
+  width: 300px;
+  height: 300px;
+  box-shadow: 5px 10px #b39494;
+  border-color: rgb(238, 255, 0);
+  border-width: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+}
+
+
+.end {
+
+  display: flexbox;
+  background-color: #000000;
+  border-width : 10px; 
+  width: 1400px;
+  height: 200px;
+  border-width: 5px;
+  border-color: rgb(255, 0, 0);
+  box-shadow: 10px 10px #999;
+}
+
+.origami p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: absolute;
+  color: #ffffff;
+  top : 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+}
+
+.origami:hover p{
+  opacity: 1;
+  
+}
+
+.bg-image {
+  background-image: url('bag.jpg');
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.comment-bg {
+  background-image: url('comment.jpg');
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+
+.origami:hover img{
+  opacity: 0.3;
+}
+
+a:link {
+  color: limegreen;
+}
+
+a:visited {
+  color: limegreen;
+}
+
+.dc {
+  border: 10px solid #ff0000;
+  margin: 50px;
+  width: 1300px;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+
+}
+
+input {
+  background-color: transparent;
+  margin-left: 500px;
+  border-radius: 15px;
+  border-color: white;
+  border-width: 10px;
+  color: white;
+  width: 250px;
+  font-size: 20px;
+  height: 30px;
+  text-align: center;
+}
+
+textarea {
+  background-color: transparent;
+  margin-left: 450px;
+  border-radius: 15px;
+  border-color: white;
+  border-width: 10px;
+  color: white;
+  width: 350px;
+  font-size: 20px;
+  height: 100px;
+  text-align: center;
+}
+
+
+::placeholder {
+  color: white;
+}
+
+button {
+  margin-left: 540px;
+  background-color: rgb(219, 58, 58);
+  width: 200px;
+  height: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+
+

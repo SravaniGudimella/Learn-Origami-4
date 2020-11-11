@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <head>
+        <title>Learn Origami</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+
+        <script>
+          var firebaseConfig = {
+          apiKey: "AIzaSyBTu5DODWMmHVA4FnWxv_m6e0OefdvWFX0",
+          authDomain: "origami-comment.firebaseapp.com",
+          databaseURL: "https://origami-comment.firebaseio.com",
+          projectId: "origami-comment",
+          storageBucket: "origami-comment.appspot.com",
+          messagingSenderId: "763036471740",
+          appId: "1:763036471740:web:cade5766c15880b0c05bb9"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        </script>
+
+        <script src="comment.js"></script>
+    </head>
+    <body>
+
+        <div class="menu">
+            <a href = "index.html"><i class="material-icons">home</i></a>                    
+            <h2 class="glow" >Learn Origami</h2>
+            <a href = "about.html"><i class="material-icons">info</i></a>
+        </div>   
+            
+            <div class="bg-image">
+              <div class="hero-text">
+                  <h1>Welcome To Learn Origami<h1>
+                <h3>Our goal is to show more people how to make origami while helping them improve their skills and promoting artists and others in the international paper folding community.If you’ve never folded anything before and want to learn how, we have an excellent guide for beginners. We have a giant database of free diagrams and video instrutions too.</h3>
+              </div>
+            </div>
+          <div class="hero-image">
+            <div class="origami">
+              <p>Camel</p>
+              <div class="grid">
+                <img src="camel.png">
+                <p>
+                  <li style="font-family: cursive; font-size: 20px; margin-top: 0px;">Tutorial To Make This :- <a href = "http://origami.me/camel/" style="text-decoration: none; color: rgb(128, 255, 0);">Click Here</a></li>                 
+                </p>
+              </div>
+            </div>
+            <div class="origami">
+              <div class="grid">
+                <p>Cicada</p>
+                <img src="cicada.png">
+                <p>
+                <li style="font-family: cursive; font-size: 20px; margin-top: 0px;">Tutorial To Make This :- <a href = "http://origami.me/cicada/" style="text-decoration: none; color: rgb(128, 255, 0);">Click Here</a></li>  
+              </p>
+              </div>
+            </div>
+            <div class="origami">
+              <div class="grid">
+                <p>Pigeon</p>
+                <img src="pigeon.png">
+                  <p>
+                  <li style="font-family: cursive; font-size: 20px; margin-top: 0px;">Tutorial To Make This :- <a href = "http://origami.me/pigeon/" style="text-decoration: none; color: rgb(128, 255, 0);">Click Here</a></li>                 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="origami">
+              <div class="grid">
+                <p>Panda</p>
+                <img src="panda.png">
+                <p>
+                  <li style="font-family: cursive; font-size: 20px; margin-top: 0px;">Tutorial To Make This :- <a href = "http://origami.me/panda/" style="text-decoration: none; color: rgb(128, 255, 0);">Click Here</a></li>
+                </p>
+              </div>
+            </div>
+            <div class="origami">
+              <div class="grid">
+                <p>Chameleon</p>
+                <img src="chameleon.png">
+                <p>
+                  <li style="font-family: cursive; font-size: 20px; margin-top: 0px;">Tutorial To Make This :- <a href = "http://origami.me/chameleon/" style="text-decoration: none; color: rgb(128, 255, 0);">Click Here</a></li>
+                </p>
+              </div>
+            </div>
+            <div class="origami">
+              <div class="grid">
+                <p>Teddy</p>
+                <img src="teddy.png">
+                <p>
+                <li style="font-family: cursive; font-size: 20px; margin-top: 0px;">Tutorial To Make This :- <a href = "http://origami.me/teddy/" style="text-decoration: none; color: rgb(128, 255, 0);">Click Here</a></li>
+              </p>
+              </div>
+            </div>
+          </div>
+            <div class="dc" style="background-image: url(comment.jpg);">
+              <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 40px;margin-top: 0px; color: white; text-align: center;">Comment On My Website.</p>
+              <input type="text" placeholder="Enter Your Name" id="name" ><br><br>
+              <input type="email" placeholder="Enter Your Email Address" id="email" ><br><br><br>
+              <textarea rows="10" cols="50" placeholder="Type Here...." id="comment" ></textarea><br><br>
+              <button type="submit" onclick="add()">Add Comment</button> 
+          </div>
+              
+   
+    </body>
+</html>
